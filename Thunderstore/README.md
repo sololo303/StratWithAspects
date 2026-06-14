@@ -1,14 +1,14 @@
 # Start With Aspect
 
-Choisis un **aspect d'élite** avec lequel commencer ta partie, directement depuis la fenêtre **Arsenal** de l'écran de sélection de personnage.
+Pick an **elite aspect** to start your run with, right from the **Loadout** tab on the character select screen.
 
-## Fonctionnalités
+## Features
 
-- Une ligne **ASPECT** ajoutée dans l'Arsenal : clique une icône pour choisir l'aspect de départ (ou « aucun »).
-- Tous les aspects sont détectés automatiquement, **DLC inclus** (Blazing, Overloading, Glacial, Malachite, Celestine, Perfected, Void, etc.).
-- Au lancement de la partie, tu démarres avec l'aspect équipé (tu deviens cet élite : aura + effet).
-- **Multijoueur** : chaque joueur choisit et démarre avec son propre aspect.
+- An **ASPECT** row added to the Loadout tab: click an icon to choose your starting aspect (or "none").
+- All aspects are detected automatically, **DLC included** (Blazing, Overloading, Glacial, Malachite, Celestine, Perfected, Void, etc.).
+- When the run starts, you spawn with the aspect equipped (you become that elite: aura + effect).
+- **Multiplayer**: every player picks and starts with their own aspect.
 
-## Utilisation
+## How to use
 
-Sur l'écran de sélection de personnage, ouvre l'onglet **Arsenal**, choisis une icône dans la ligne **ASPECT** en bas, puis lance la partie.
+On the character select screen, open the **Loadout** tab, click an icon in the **ASPECT** row at the bottom, then start the run.

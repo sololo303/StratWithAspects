@@ -1,33 +1,33 @@
 # StartWithAspect
 
-Un mod **Risk of Rain 2** qui te laisse choisir un **aspect d'élite** avec lequel commencer la partie, directement depuis la fenêtre **Arsenal** de l'écran de sélection de personnage.
+A **Risk of Rain 2** mod that lets you pick an **elite aspect** to start the run with, straight from the **Loadout** tab on the character select screen.
 
-![Aperçu](Thunderstore/icon.png)
+![Preview](Thunderstore/icon.png)
 
-## Fonctionnalités
+## Features
 
-- Une ligne **ASPECT** ajoutée dans l'Arsenal : clique une icône pour choisir l'aspect de départ (ou « aucun »).
-- Tous les aspects sont détectés automatiquement, **DLC inclus** (Blazing, Overloading, Glacial, Malachite, Celestine, Perfected, Void, etc.).
-- Au lancement de la partie, le personnage démarre avec l'aspect équipé (il devient cet élite : aura + effet).
-- **Multijoueur** : chaque joueur choisit et démarre avec son propre aspect (synchronisé via R2API Networking).
-- Réglage de config `Aspect de depart` comme sélecteur de secours.
+- An **ASPECT** row added to the Loadout tab: click an icon to choose your starting aspect (or "none").
+- All aspects are detected automatically, **DLC included** (Blazing, Overloading, Glacial, Malachite, Celestine, Perfected, Void, etc.).
+- When the run starts, your character spawns with the aspect equipped (you become that elite: aura + effect).
+- **Multiplayer**: each player picks and starts with their own aspect (synchronized via R2API Networking).
+- A `Starting aspect` config option as a fallback selector.
 
-## Dépendances
+## Dependencies
 
 - BepInEx (BepInExPack)
 - R2API Networking
 - HookGenPatcher
 
-## Compiler
+## Building
 
-Ouvre `RoR2Mods.sln` dans Visual Studio (workload « .NET desktop »), laisse NuGet restaurer les paquets, puis génère la solution (`Ctrl+Maj+B`). Le `.dll` est produit dans `ExamplePlugin/bin/<Config>/netstandard2.1/`.
+Open `RoR2Mods.sln` in Visual Studio (with the ".NET desktop development" workload), let NuGet restore the packages, then build the solution (`Ctrl+Shift+B`). The `.dll` is produced in `ExamplePlugin/bin/<Config>/netstandard2.1/`.
 
-Copie ce `.dll` dans `BepInEx/plugins/StartWithAspect/` de ton profil (r2modman recommandé) pour le tester.
+Copy that `.dll` into `BepInEx/plugins/StartWithAspect/` of your profile (r2modman recommended) to test it.
 
-## Publier
+## Publishing
 
-Le dossier `Thunderstore/` contient le `manifest.json`, l'`icon.png` (256×256), le `README.md` et le `CHANGELOG.md` à empaqueter en `.zip` pour un envoi sur [Thunderstore](https://thunderstore.io/c/riskofrain2/).
+The `Thunderstore/` folder contains `manifest.json`, `icon.png` (256×256), `README.md` and `CHANGELOG.md`, ready to be packed into a `.zip` and uploaded to [Thunderstore](https://thunderstore.io/c/riskofrain2/).
 
-## Licence
+## License
 
-MIT — voir `LICENSE`.
+MIT — see `LICENSE`.

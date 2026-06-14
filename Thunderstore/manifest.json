@@ -2,7 +2,7 @@
 	"name": "StartWithAspect",
 	"version_number": "1.0.0",
 	"website_url": "",
-	"description": "Choisis un aspect d'elite avec lequel demarrer la partie, depuis l'Arsenal.",
+	"description": "Pick an elite aspect to start your run with, from the Loadout tab.",
 	"dependencies": [
 		"bbepis-BepInExPack-5.4.2108",
 		"RiskofThunder-HookGenPatcher-1.2.3",
