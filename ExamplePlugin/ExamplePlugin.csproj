@@ -5,6 +5,10 @@
 		<LangVersion>preview</LangVersion>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
+		<!-- Nom de l'assembly genere : evite la collision avec le template "ExamplePlugin". -->
+		<AssemblyName>StartWithAspect</AssemblyName>
+		<Product>StartWithAspect</Product>
+
         <RestoreAdditionalProjectSources>
 			https://api.nuget.org/v3/index.json;
 			https://nuget.bepinex.dev/v3/index.json

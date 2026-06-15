@@ -1,6 +1,6 @@
 ﻿{
 	"name": "StartWithAspect",
-	"version_number": "1.0.0",
+	"version_number": "1.0.1",
 	"website_url": "",
 	"description": "Pick an elite aspect to start your run with, from the Loadout tab.",
 	"dependencies": [

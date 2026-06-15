@@ -13,7 +13,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace ExamplePlugin
+namespace StartWithAspect
 {
     // ============================================================
     //  StartWithAspect
@@ -35,7 +35,7 @@ namespace ExamplePlugin
         public const string PluginGUID    = PluginAuthor + "." + PluginName;
         public const string PluginAuthor  = "virgile";
         public const string PluginName    = "StartWithAspect";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.0.1";
 
         // Selecteur temporaire : nom de l'aspect choisi (lu dans le .cfg).
         private static ConfigEntry<string> chosenAspect;
@@ -146,14 +146,21 @@ namespace ExamplePlugin
             return "";
         }
 
-        // Enumere tous les equipements d'aspect d'elite (DLC inclus).
+        // Aspects caches / non utilises du jeu a NE PAS proposer.
+        private static readonly HashSet<string> excludedAspects = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "EliteSecretSpeedEquipment", // "Au-dela des limites" : aspect cache (oreilles de lapin)
+        };
+
+        // Enumere tous les equipements d'aspect d'elite (DLC inclus), sauf ceux exclus.
         // Methode robuste : un equipement est un aspect si son buff passif est un buff d'elite.
         private static IEnumerable<EquipmentDef> GetAllAspects()
         {
             for (int i = 0; i < EquipmentCatalog.equipmentCount; i++)
             {
                 EquipmentDef def = EquipmentCatalog.GetEquipmentDef((EquipmentIndex)i);
-                if (def != null && def.passiveBuffDef != null && def.passiveBuffDef.isElite)
+                if (def != null && def.passiveBuffDef != null && def.passiveBuffDef.isElite
+                    && !excludedAspects.Contains(def.name))
                     yield return def;
             }
         }

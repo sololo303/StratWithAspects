@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.IO;
 
-namespace ExamplePlugin
+namespace StartWithAspect
 {
     internal static class Log
     {
